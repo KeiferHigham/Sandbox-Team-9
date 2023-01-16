@@ -3,7 +3,6 @@
  * CUSTOMER_DATA_REQUEST
  *
  */
-
 const customerDataRequest = async (topic, shop, webhookRequestBody) => {
   // Payload
   // {
@@ -32,13 +31,11 @@ const customerDataRequest = async (topic, shop, webhookRequestBody) => {
     return { success: false };
   }
 };
-
 /**
  *
  * CUSTOMER_REDACT
  *
  */
-
 const customerRedact = async (topic, shop, webhookRequestBody) => {
   // Payload
   // {
@@ -64,13 +61,11 @@ const customerRedact = async (topic, shop, webhookRequestBody) => {
     return { success: false };
   }
 };
-
 /**
  *
  * SHOP_REDACT
  *
  */
-
 const shopRedact = async (topic, shop, webhookRequestBody) => {
   // Payload
   // {

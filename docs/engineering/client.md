@@ -1,5 +1,4 @@
 # Client
-
 We use React.js and Vite to run our client side / front facing operations. The `client/` folder, that houses the frontend code, is setup the way I like it so feel free to change the folder structure with the way you prefer. A thing to note is you cannot use Next.js with Vite. We use `raviger` package to navigate, which is also swappable with your preferred strategy. I moved over to `raviger` because it sets up routing just like Next.js does, making it easier for me to migrate my code and eventually, the familiarity made me use it outside the Shopify apps.
 
 I don't use Tailwind or other libraries because Shopify Polaris is great enough to handle all my needs and make the app feel native - which is what we usually go for and it's recommended because it needs to feel like the embedded app _belongs_ in the admin.
@@ -12,7 +11,7 @@ This is to embed the React app in `./index.html`
 
 - We start with defining our `appBridgeConfig` for App Bridge to get the required params to function.
 - `App()` renders the final app that we see.
-  - `RouteComponents` is imported from `GlobalRoutes.jsx` to render the right page.
+- `RouteComponents` is imported from `GlobalRoutes.jsx` to render the right page.
 - `MyProvider()` builds our Apollo client.
 - `useFetch()` is how we fetch content from our server. This is easy since it uses a similar structure `fetch` API that most JS developers are familiar with, and takes care of headers so no more unnecessary code.
 
