@@ -17,6 +17,7 @@
     "dev": "concurrently \"npm run dev:*\"",
     "dev:server": "NODE_ENV=dev nodemon server/index.js --ignore client/ --ignore dist/",
     "dev:client": "vite --config=./client/vite.config.cjs",
+    "dev:shopifydev": "shopify app dev",
     "preserve": "npm run build",
     "build": "vite build --config=./client/vite.config.cjs",
     "start": "NODE_ENV=prod node server/index.js",
